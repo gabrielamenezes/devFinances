@@ -11,6 +11,10 @@
     --color-3: #363f5f;
     --card-color: #49AA26;
 }
+
+html {
+    font-size: 93.75%; /* 15px */
+}
 body {
     background: var(--background);
     font-family: var(--font-1);
@@ -115,12 +119,13 @@ table thead tr th:first-child,
 table tbody tr td:first-child {
     border-radius: 0.25rem 0 0 0.25rem;
 }
-
+table thead tr th:last-child,
+table tbody tr td:last-child {
+    border-radius: 0 0.25rem 0.25rem 0;
+}
 table thead th {
     background: var(--color-2);
     opacity: 0.6;
-
-    
     font-weight: normal;
     padding: 1rem 2rem;
     text-align: left;
@@ -159,4 +164,18 @@ footer {
 
     color: var(--color-3);
     opacity: 0.6;
+}
+
+/* responsive */
+
+@media (min-width: 800px) {
+    html {
+        font-size: 87.5%; /* */
+    }
+
+    #balance {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 2rem;
+    }
 }
