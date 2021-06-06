@@ -36,6 +36,22 @@ h2 {
     color: var(--color-3);
     font-weight: normal;
 }
+
+/* links and buttons */
+
+a {
+    color: var(--card-color);
+    text-decoration: none;
+}
+
+a:hover {
+    color: #3dd705;
+}
+
+.button.new {
+    margin-bottom: 0.8rem;
+    display: inline-block;
+}
 header {
     background: var(--color-1);
     padding: 2rem 0 10rem;
